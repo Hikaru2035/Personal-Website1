@@ -1,0 +1,119 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ededed;
+    overflow-x: hidden;
+}
+.game{
+    padding-top: 120px;
+}
+
+#title {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#board {
+    width: 350px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+    color: #001D3D;
+    font-size: 56px;
+}
+.tile {
+    /* Box */
+    border: 2px solid #001D3D;
+    width: 60px;
+    height: 60px;
+    margin: 2.5px;
+
+    /* Text */
+    color: #001D3D;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loseMessage{
+    color: red;
+}
+#winMessage{
+    color: green;
+}
+#answer{
+    color: #001D3D;
+}
+.correct {
+    background-color: #6AAA64;
+    color: white;
+    border-color: white;
+}
+
+.present {
+    background-color: #C9B458;
+    color: white;
+    border-color: white;
+}
+
+.absent {
+    background-color: #787C7E;
+    color: white;
+    border-color:white;
+}
+
+#resetButton{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #001D3D;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all .55s ease-in-out;
+    opacity: 1;
+}
+
+.keyboardRow {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: #001D3D;
+}
+
+.keyTile {
+    width: 36px;
+    height: 40px;
+    margin: 1px;
+    border: 1px solid #001D3D;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterKeyTile {
+    width: 76px;
+    height: 40px;
+    margin: 1px;
+    border: 1px solid #001D3D;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

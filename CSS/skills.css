@@ -1,0 +1,99 @@
+/* Font size */
+:root{
+    --fs-36: 36px;
+    --fs-20: 20px;
+    --fs-102: 102px;
+}
+
+.skewed  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #001D3D;
+    z-index: -1;
+    transform: skewY(-14deg);
+    transform-origin: top left;
+}
+
+.text h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-102);
+    z-index: 100;
+    min-height: 100vh;
+    animation: slideBottom .5s ease-in-out;
+    opacity: 1;
+}
+.skills{
+    color: #001D3D;
+}
+.skillsContent{
+    padding: 70px 10%;
+}
+.skillsContent h2{
+    font-size: var(--fs-36);
+    padding-bottom: 5px;
+}
+.skillsContent p{
+    font-size: var(--fs-20);
+    padding-block: 20px;
+}
+
+.HTML{
+    padding: 70px 10%;
+
+}
+.HTML h2{
+    font-size: var(--fs-36);
+    display: grid;
+    align-items: center;
+    justify-content: left;
+    color: #001D3D;
+    padding-bottom: 10px;
+}
+.HTMLContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.HTMLContent img{
+    width: 80%;
+}
+.HTMLText p{
+    font-size: var(--fs-20);
+    color: #001D3D;
+}
+@media (max-width:1100px){
+    .HTMLContent.two{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .HTMLContent.one, .HTMLContent.three{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .HTMLContent img{
+        width: 100%;
+        padding-top: 30px; 
+    }
+}
+@media (max-width: 610px){
+    .section{
+        padding: 30px 2% 0;
+        height: 100%;
+    }
+    :root{
+        --fs-36: 28px;
+        --fs-20: 14px;
+        --fs-102: 54px;
+    }
+}

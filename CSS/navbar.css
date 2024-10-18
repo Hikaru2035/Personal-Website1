@@ -1,0 +1,156 @@
+/* Whole page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+}
+body{
+    color: #ededed;
+    overflow-x: hidden;
+}
+
+
+/* Start - Header and navigation links */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 20px 10%;
+    z-index: 100;
+    background: #000814;
+}   
+/* Logo */
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    animation: slideRight .5s ease-in-out;
+    opacity: 1;
+}
+.text, .logo span{
+    color: #ffc300;
+}
+/* Navigation links */
+.Bar a{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 50px;
+    transition: .2s;
+    border-radius: 40px;
+    padding: 8px 12px;
+    transition: all .55s ease;
+    animation: slideTop .5s ease-in-out;
+    opacity: 1;
+}
+.links a:hover{
+    color: #000814;
+    background: #ffc300;
+}
+#menuIcon{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* Exit button */
+.exit{
+    width: 40px;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: 1s ease;
+}
+.exit:hover{
+    width: 60px;
+}
+/* Sub-menu */
+.sideBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    background-color: #000814;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sideBar a{
+    display: inline-block;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 50px;
+    transition: .2s;
+    border-radius: 40px;
+    padding: 8px 12px;
+    transition: all .55s ease;
+    animation: slideTop .5s ease-in-out;
+    opacity: 1;
+}
+/* End - Header and navigation links */
+
+/* Start - Footer */
+footer{
+    background: #000814;
+    color: #ffc300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 10px;
+}
+/* End - Footer */
+
+@media (max-width: 1055px){
+    .Bar a{
+        display: none;
+    }
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,205 @@
+/* Font size */
+:root{
+    --fs-36: 36px;
+    --fs-20: 20px;
+    --fs-76: 76px;
+    --fs-56: 56px;
+    --fs-12: 12px;
+    --fs-28: 28px;
+}
+
+/* start - first section */
+.text h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 102px;
+    z-index: 100;
+    min-height: 100vh;
+    animation: slideBottom .5s ease-in-out;
+    opacity: 1;
+}
+.cloud {
+    padding: 70px 10%;
+    background: #001D3D;
+}
+.cloudContent h1{
+    font-size: var(--fs-56);
+    animation: slideBottom .5s ease-in-out;
+    opacity: 1;
+    color: #ffc300;
+    padding-bottom: 20px;
+}
+.cloudContent p{
+    font-size: var(--fs-20);
+}
+.cloudImage img{
+    display: none;
+}
+.cloudContent{
+    padding-top: 100px;
+}
+.cloudButton{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding-top: 20px;
+}
+.cloudButton a{
+    display: inline-block;
+    padding: var(--fs-12) var(--fs-28);
+    background: #ffc300;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    color: #000814;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--fs-20);
+    transition: all .55s ease-in-out;
+    animation: slideBottom .5s ease-in-out;
+    opacity: 1;
+}
+.cloudButton a:hover{
+    box-shadow: 0 0 5px #ffc300,
+    0 0 25px #ffc300, 0 0 50px #ffc300,
+    0 0 100px #ffc300, 0 0 200px #ffc300;
+    background: #000814;
+    color: #ffc300;
+}
+/* end - firstsection */
+
+/* Start - Type of Cloud Computing */
+.typeOfCloudComputing{
+    background-color: #001D3D;
+    padding: 70px 10%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 20px;
+}
+.typeOfCloudComputing h1{
+    font-size: var(--fs-56);
+    color: #ffc300;
+    animation: slideBottom .5s ease-in-out;
+    opacity: 1;
+}
+.Iaas, .Paas, .Saas {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+    animation: slideBottom .5s ease-in-out;
+    opacity: 1;
+    background: #001D3D;
+    padding: 20px;
+}
+.typeOfCloudComputing p {
+    font-size: var(--fs-20);
+    padding-block: 10px;
+}
+/* End - Type of Cloud Computing */
+
+/* Start - Benefit of Clou Computing */
+.benefitOfCloud{
+    background: #001D3D;
+    padding: 70px 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+.benefitOfCloud h1{
+    font-size: var(--fs-56);
+    color: #ffc300;
+    animation: slideBottom .5s ease-in-out;
+    opacity: 1;
+}
+.agility, .elastic, .costSaving {
+    padding-block: 20px;
+    padding: 20px;
+}
+.benefitOfCloud p{
+    font-size: var(--fs-20);
+    padding-block: 10px;
+}
+/* Media Queries */
+@media (max-width: 900px){
+    .section{
+        padding: 30px 2% 0;
+        height: 100%;
+    }
+    :root{
+        --fs-36: 28px;
+        --fs-20: 14px;
+        --fs-56: 36px;
+    }
+}
+@media (max-width:700px){
+    .typeOfCloudComputing{
+        background-color: #001D3D;
+        padding: 70px 10%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        padding: 20px;
+    }
+    .Paas , .Iaas, .Saas{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .cloud{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .cloudImage img {
+        width: 80%;
+    }
+}
+/* Animation */
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
